@@ -10,7 +10,7 @@ import streamlit as st
 
 
 @st.cache
-def get_data(filename):
+def file_selector(dsname):
     df1 = sns.load_dataset('penguins')
     df1.dropna(how='any', inplace=True)
     df2 = sns.load_dataset('iris')
@@ -33,6 +33,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.sidebar.header("Group Project AN8005: Machine Methodology")
+st.sidebar.selectbox("Select an example dataset", ["Penguins", "Iris"])
+st.sidebar.selectbox("Select a parameter", ["Penguins", "Iris"])
+
 with header:
     st.title('Hooray')
     st.text('some description')
@@ -40,7 +44,7 @@ with header:
 
 
 dataset.title("dataset")
-st.sidebar.selectbox("Select a number", [1, 2, 3, 4])
+
 
 with features:
     st.text("Here are some features")

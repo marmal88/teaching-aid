@@ -8,7 +8,7 @@ The aims of this mini project is to:
 * Implement project documentation practices
 
 
-# Deployment
+## Deployment
 To utlize the project from main please run the following
 ```bash
 conda create --name teaching-aid python=3.9
@@ -18,10 +18,6 @@ Install packages by
 ```bash
 pip install -r requirements.txt
 ```
-Download necessary files by
-```bash
-python -m spacy download en_core_web_sm
-```
 
 To directly deploy the interface:
 ```bash
@@ -29,7 +25,7 @@ cd src
 streamlit run main.py
 ```
 
-# File structure
+## File structure
 A simplified file structure is state below with essential details. 
 ```bash
 .
@@ -44,5 +40,5 @@ A simplified file structure is state below with essential details.
 ```
 
 ## Authors
-The original code (JupyterNotebook) was worked on by Peiyu, Hanwen, YangHang and Daniel Low
+The original code (Jupyter Notebook) was worked on by Peiyu, Hanwen, YangHang and Daniel Low
 Refactoring work was done by Daniel Low 
